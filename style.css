@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-top: 24px;
+}
+
+html {
+  font-family: "Cinzel", serif;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url(./img/Fundo.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /* Mantem o tamnho total da imagem mas a altura é automatica */
+  background-color: #121214;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  height: 120px;
+}
+
+header div {
+  width: 120px;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.7s;
+}
+
+header div:hover {
+  transform: scale(1.1);
+}
+
+header div img {
+  width: 120px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+main {
+  /* Para maiores de 580px */
+  max-width: 580px;
+  /* Menor que 580px */
+  width: 90%;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section {
+  color: white;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  padding-top: 4px;
+  border-radius: 10px;
+  /* Borda da caixa de cima é 8px */
+}
+
+section div {
+  background-color: #2a2634;
+  padding: 24px 32px 32px;
+  border-radius: 8px;
+}
+
+section h2 {
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.47px;
+  line-height: 160%;
+}
+
+section p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+  line-height: 160%;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+section ul li {
+  transition: transform 0.3s;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+.games-list img {
+  width: 90px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.channel-list img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #443e54;
+}
+
+/* Animation */
+
+header div {
+  animation: slide 0.7s 0.4s backwards;
+}
+
+main section:nth-child(1) {
+  animation: slideFromBottom 0.7s 0.4s backwards;
+}
+
+main section:nth-child(2) {
+  animation: slideFromBottom 0.7s 0.6s backwards;
+}
+
+main section:nth-child(3) {
+  animation: slideFromBottom 0.7s 0.8s backwards;
+}
+
+main section {
+  animation: slideFromBottom 0.7s 0.4s backwards;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Todos, por mais iniciantes que seja, tem algo para ensinar e ninguém é tão bom que não tenha algo para aprender */
+
+/* 
+1 - Comunicação
+2 - Escrita técnica 
+3 - Proatividade (Buscar fazer antes de ser sólicitado e entregue sempre mais do que esperado)
+4 - Capacidade de se adaptar seja receptivo as mudanças
+5 - Busque feedbacks
+6 - Pensamento analitico e investigativos
+7 - Gestão do tempo
+8 - Lidar com pressão
+9 - Marca pessoa
+10 - linkedin 
+*/
+
+/* Processo de envio de um repositorio para o github
+1 - Criar o repositorio 
+2 - Repositorio deve estar público
+3 - Ir na pages e selecionar a branch
+
+*/
