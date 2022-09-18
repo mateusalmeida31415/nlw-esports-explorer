@@ -132,20 +132,20 @@ header div {
   animation: slide 0.7s 0.4s backwards;
 }
 
+main section {
+  animation: slideFromBottom 0.7s backwards;
+}
+
 main section:nth-child(1) {
-  animation: slideFromBottom 0.7s 0.4s backwards;
+  animation-delay: 0.4s;
 }
 
 main section:nth-child(2) {
-  animation: slideFromBottom 0.7s 0.6s backwards;
+  animation-delay: 0.6s;
 }
 
 main section:nth-child(3) {
-  animation: slideFromBottom 0.7s 0.8s backwards;
-}
-
-main section {
-  animation: slideFromBottom 0.7s 0.4s backwards;
+  animation-delay: 0.8s;
 }
 
 @keyframes slide {
@@ -189,6 +189,9 @@ main section {
 /* Processo de envio de um repositorio para o github
 1 - Criar o repositorio 
 2 - Repositorio deve estar público
-3 - Ir na pages e selecionar a branch
+3 - Ir na pages e selecionar a branch (Para acessar https://mateusalmeida31415.github.io/nlw-esports-explorer/)
+4 - Modificar o about
 
+
+README - Mostrar como o projeto funciona, qual as ideais e as tecnológias aplicada nele, foto do projeto
 */
